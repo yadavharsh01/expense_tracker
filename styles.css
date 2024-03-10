@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f4f9fd;
+}
+h1{
+    font-size: 2.5em;
+    color: #363d55;
+    font-weight: 600;
+    margin: 1em;
+    padding-top: 2em;
+    text-align: center;
+}
+.wrapper{
+    width: 90%;
+    font-size: 1.5em;
+    max-width: 44em;
+    margin: 2em ;
+    padding: 2em;}
+.container{
+    width: 100%;
+    
+  }
+.sub-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:3em;
+}
+.flex{
+    display: flex;
+     align-items: center;
+    }
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper h3{
+    color: #363d55;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+.container input {
+display: block;
+width: 100%;
+padding: 0.6em 0.4em;
+border: 1px solid #d0d0d0;
+border-radius: 0.3em;
+color: #414a67;
+margin-bottom: 0.6em;
+outline: none;
+font-weight: 400;
+}
+.container input:focus{
+    border-color: #e05aad;
+    }
+.total-amount-container,
+ .user-amount-container{
+    background-color:#ffffff ;
+    padding: 1.25em 1em;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em #f4f4f4;
+}
+.output-container{
+    background-color: #e05aad;
+    color:#ffffff;
+     padding: 1.5em ;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(30,0,80,0.5);
+    margin: 1em 0;
+    font-weight:500 ;
+
+}
+.output-container p{
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+.output-container span{
+    display: block;
+    text-align: center;
+    color:#e5e5e5 ;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.submit{
+    font-size: 1em;
+    margin: 1em;
+    background-color: #e05aad;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 0.6em 1em;
+    border-radius: 0.3em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.list{
+    background-color: #ffffff;
+    padding:2em;
+    box-shadow: 0 0.6em 1.2em rgba(30,0,80,0.5);
+    border-radius: 0.5em;
+    margin-top: 1em;
+
+}
+.hide-error{
+    display: none;
+    color: #ff465a;
+}
