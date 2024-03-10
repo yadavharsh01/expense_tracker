@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+  <h1>Expense Tracker</h1>
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+                <!-- Budget -->
+                <div class="total-amount-container">
+                    <h3>Budget</h3>
+                    <p class="hide-error" id="budget-error">Value can't be negative or Empty</p>
+                    <input type="number" id="total-amount" placeholder="Enter Total Budget">
+                    <button class="submit" id="total-amount-button">Set Budget</button>
+                </div>
+                <!-- Expense -->
+                <div class="user-amount-container">
+                    <h3>Expenses</h3>
+                    <p class="hide-error" id="product-title-error">Value can't be Empty</p>
+                    <input type="text" id="product-title" placeholder="Enter Expense Title">
+                    
+                      <input type="number" id="user-amount" placeholder="Enter Cost of Product">
+                    <button class="submit" id="check-amount">Check Amount</button>
+                </div>
+            </div>
+            <!-- Output -->
+            <div class="output-container flex-space">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="amount">0</span>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id="expenditure-value">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balance-amount">0</span>
+                                     </div>
+        </div>
+    </div>
+    <!-- List -->
+    <div class="list">
+        <h3>Expenses List</h3>
+        <div class="list-container" id="list">
+
+        </div>    
+    </div>
+
+    
+</body>
+</html>
