@@ -38,7 +38,7 @@ Array.from(editButtons).forEach((button)=>{
 // modify
 const modifyElement=(element,edit)=>{
     let parentDiv=element.parentElement;
-    let currentBalanace=balanceAmount.innerHTML;
+    let currentBalance=balanceAmount.innerHTML;
     let currentExpense=expenditureValue.innerHTML;
     let parentAmount=parentDiv.querySelector('.amount').innerHTML;
     if(edit){
@@ -47,7 +47,7 @@ const modifyElement=(element,edit)=>{
         userAmount.value=parentAmount;
         disableButton(true);
     }
-    balanceAmount.innerHTML=parseInt(currentBalanace)+parseInt(parentAmount);
+    balanceAmount.innerHTML=parseInt(currentBalance)+parseInt(parentAmount);
     expenditureValue.innerHTML=parseInt(currentExpense)-parseInt(parentAmount);
     parentDiv.remove();
 }

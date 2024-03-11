@@ -107,7 +107,51 @@ font-weight: 400;
     margin-top: 1em;
 
 }
+.dublist-content{
+    width: 100%;
+    border-left: 0.3em solid #e05aad;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+}
+.product{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-left: 1.5em;
+    color: #363d55;
+}
+.amount{
+    color: #414a67;
+    margin-left: 20%;
+}
+.icons-container{
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+}
+.product-tetle{
+    margin-bottom: 1em;
+}
 .hide-error{
     display: none;
     color: #ff465a;
+}
+.edit{
+    margin-left: auto;
+
+}
+.edit,.delete{
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #e05aad;
+}
+@media screen and (max-width: 600px){
+    .sub-container{
+        grid-template-columns: 1fr;
+    }
+    
+    .wrapper{
+        font-size: 14px;
+    }
 }
